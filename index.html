@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MITS Academy - Empowering Futures Through Skill-Based Education</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>MITS Academy</h1>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#courses" class="nav-link">Courses</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Empowering Futures Through
+                    <span class="highlight">Skill-Based Education</span>
+                </h1>
+                <p class="hero-description">
+                    MITS Academy in Amritsar is your gateway to professional excellence. We offer comprehensive courses
+                    designed to meet industry demands and prepare you for a successful career in technology and beyond.
+                </p>
+                <button class="cta-button" onclick="scrollToSection('courses')">
+                    Explore Courses
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <!-- Hero Slider -->
+            <div class="hero-slider">
+                <div class="slider-container">
+                    <div class="slide active">
+                        
+                        <div class="slide-overlay">
+                            <h3>Full Stack Development</h3>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-overlay">
+                            <h3>Data Science & AI</h3>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        
+                        <div class="slide-overlay">
+                            <h3>Digital Marketing</h3>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        
+                        <div class="slide-overlay">
+                            <h3>Graphic Design</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide indicators -->
+                <div class="slider-indicators">
+                    <button class="indicator active" onclick="currentSlide(1)"></button>
+                    <button class="indicator" onclick="currentSlide(2)"></button>
+                    <button class="indicator" onclick="currentSlide(3)"></button>
+                    <button class="indicator" onclick="currentSlide(4)"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Courses</h2>
+                <p>Choose from our comprehensive range of industry-focused courses designed to boost your career prospects.</p>
+            </div>
+            
+            <div class="courses-grid" id="courses-grid">
+                <!-- Courses will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>About MITS Academy</h2>
+                <p>
+                    Located in the heart of Amritsar, MITS Academy has been a pioneer in providing quality technical education
+                    and skill development programs. Our mission is to bridge the gap between academic learning and industry
+                    requirements, ensuring our students are job-ready upon completion of their courses.
+                </p>
+            </div>
+            
+            <!-- Staff Team Photo Placeholder -->
+            <div class="team-photo">
+                <div class="team-placeholder">
+                    <i class="fas fa-users"></i>
+                    <p class="team-subtitle"><img class="team-image" src="http://127.0.0.1:5500/WhatsApp%20Image%202025-04-12%20at%206.17.56%20PM.jpeg" alt=""></p>
+                </div>
+            </div>
+            
+            <!-- Why MITS Section -->
+            <div class="why-mits">
+                <h3>Why Choose MITS?</h3>
+                <div class="features-grid" id="features-grid">
+                    <!-- Features will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Ready to start your learning journey? Get in touch with us today!</p>
+            </div>
+            
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <div class="form-card">
+                        <div class="form-header">
+                            <h3><i class="fas fa-paper-plane"></i> Send us a Message</h3>
+                            <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                        </div>
+                        
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Name *</label>
+                                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="course">Course Interested In</label>
+                                <select id="course" name="course">
+                                    <option value="">Select a course</option>
+                                    <!-- Options will be populated by JavaScript -->
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Tell us more about your requirements..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-button">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-header">
+                            <h3>Contact Information</h3>
+                        </div>
+                        
+                        <div class="info-items">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Address</h4>
+                                    <p>MITS Academy, Amritsar, Punjab, India</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>+91 XXXXX XXXXX</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>xyz@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3>MITS Academy</h3>
+                <p>Empowering Futures Through Skill-Based Education</p>
+                <p class="copyright">© 2024 MITS Academy, Amritsar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

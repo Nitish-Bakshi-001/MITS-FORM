@@ -115,12 +115,8 @@ function showSlides(n) {
   slides.forEach((slide) => slide.classList.remove("active"))
   indicators.forEach((indicator) => indicator.classList.remove("active"))
 
-  if (slides[slideIndex - 1]) {
-    slides[slideIndex - 1].classList.add("active")
-  }
-  if (indicators[slideIndex - 1]) {
-    indicators[slideIndex - 1].classList.add("active")
-  }
+  slides[slideIndex - 1].classList.add("active")
+  indicators[slideIndex - 1].classList.add("active")
 }
 
 function currentSlide(n) {
@@ -138,6 +134,13 @@ function nextSlide() {
 function startSlideShow() {
   slideInterval = setInterval(nextSlide, 4000)
 }
+
+// Initialize on page load
+document.addEventListener("DOMContentLoaded", () => {
+  showSlides(slideIndex)
+  startSlideShow()
+})
+
 
 // Navigation functionality
 function scrollToSection(sectionId) {
@@ -337,16 +340,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-      hbspt.forms.create({
+document.addEventListener("DOMContentLoaded", function () {
+  hbspt.forms.create({
+    region: "na1",
+    portalId: "46403661",
+    formId: "68b94eab-1a12-450f-b532-6b6a8eb3bdc0",
+    target: "#hubspot-form"
+  });
+});
 
-        portalId: "46403661",
-
-        formId: "68b94eab-1a12-450f-b532-6b6a8eb3bdc0",
-
-        region: "na1",
-
-        target: "#hubspot-form"
-
-      });
+    
 
       

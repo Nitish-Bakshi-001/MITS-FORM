@@ -336,10 +336,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 100)
 })
 
-
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
   hbspt.forms.create({
     region: "na1",

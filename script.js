@@ -37,10 +37,10 @@ const courses = [
     image: "https://wallpapercave.com/wp/wp12541709.jpg",
   },
   {
-    name: "Basic Computer Course",
+    name: "MS Office course",
     icon: "fas fa-desktop",
     description: "Fundamental computer skills",
-    image: "https://wallpapercave.com/wp/wp12541709.jpg",
+    image: "https://i.pinimg.com/736x/d0/78/c9/d078c91c4eb2d2471a0939028febb052.jpg",
   },
   {
     name: "Indian & International Accounting",
@@ -49,13 +49,13 @@ const courses = [
     image: "https://wallpapercave.com/wp/wp13083567.jpg",
   },
   {
-    name: "Spoken English & Personality Development",
+    name: "Spoken English",
     icon: "fas fa-comments",
     description: "Communication and soft skills",
     image: "https://5.imimg.com/data5/ANDROID/Default/2023/4/299408030/VS/AQ/LD/143612158/product-jpeg.jpg",
   },
   {
-    name: "Data Visualization",
+    name: "Data Visualization using Power BI",
     icon: "fas fa-chart-bar",
     description: "Visual representation of data",
     image: "https://wallpapercave.com/wp/wp12337162.jpg",
@@ -65,7 +65,18 @@ const courses = [
     icon: "fas fa-file-code",
     description: "Programming fundamentals",
     image: "https://user-images.githubusercontent.com/79866006/236609770-d36c7858-a686-43f0-be41-250ac679f836.png",
-  },
+  },{
+    name: "Java Programming",
+    icon: "fas fa-code",
+    description: "Programming with Java",
+    image: "https://4kwallpapers.com/images/wallpapers/java-black-2732x2732-16069.png",
+
+  },{
+    name: "Python Programming",
+    icon: "fas fa-code",
+    description: "Programming with python",
+    image: "https://1000logos.net/wp-content/uploads/2020/08/Python-Logo.png"
+  }
 ]
 
 // Features data
